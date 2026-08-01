@@ -1,14 +1,29 @@
-venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+env/
+
+# Django
 db.sqlite3
-.env
+*.log
+
+# VS Code
 .vscode/
 
-# Python cache
-*.pyo
-*.pyd
+# Environment Variables
+.env
 
-# OS files
+# OS Files
 .DS_Store
 Thumbs.db
+
+# Python cache
+.pytest_cache/
+.coverage
+
+# Docker
+*.tar
