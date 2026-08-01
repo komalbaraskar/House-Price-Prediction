@@ -1,0 +1,70 @@
+/* 🌈 Smooth animations & custom effects */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Fancy gradient background for light mode */
+body.light {
+  background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  color: #222;
+}
+
+/* Subtle glowing border for inputs */
+input {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+  outline: none;
+}
+
+/* Animated button */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Fancy text effect for title */
+h1 {
+  background: linear-gradient(90deg, #60a5fa, #34d399, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+/* Fade-in animation for form */
+form {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode toggle pulse */
+#toggleMode {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}

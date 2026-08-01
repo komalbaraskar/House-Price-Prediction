@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+.vscode/
+
+# Python cache
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db

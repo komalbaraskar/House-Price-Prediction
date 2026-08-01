@@ -1,0 +1,9 @@
+Django>=4.0
+djangorestframework
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+gunicorn
+pymongo
