@@ -3,4 +3,4 @@ import os
 
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["house_price_db"]
-collection = db["predictions"]
+predictions = db["predictions"]
