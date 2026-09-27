@@ -69,8 +69,5 @@ with open('model/features.json', 'w') as f:
     json.dump(features, f)
 
 print("Model saved to model/house_price_model.pkl")
-
-
 print("Columns in CSV:", df.columns.tolist())
 print("First few rows:\n", df.head())
-
