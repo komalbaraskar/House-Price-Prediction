@@ -73,4 +73,4 @@ print("Model saved to model/house_price_model.pkl")
 
 print("Columns in CSV:", df.columns.tolist())
 print("First few rows:\n", df.head())
-print("Data types:\n", df.dtypes)
+
